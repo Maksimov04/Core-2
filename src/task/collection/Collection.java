@@ -1,6 +1,11 @@
-package task.collection;
+ package task.collection;
 
-public class Collection {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+
+ public class Collection {
     public static void main(String[] args) {
 
 
@@ -9,20 +14,127 @@ public class Collection {
     // Реализуйте функциональность согласно описанию
 
     // TODO: Для каждой задачи сгенерируйте самостоятельно коллекции и карты для тестирования своих методов
-      int age ;
 
-    }
+
+
     // TODO: Найти наибольший элемент в списке.
 
+
+    public class MaxElement {
+        public static void main(String[] args) {
+            ArrayList<Integer> arr = new ArrayList<>();
+            arr.add(10);
+            arr.add(20);
+            arr.add(8);
+            arr.add(32);
+            arr.add(21);
+            arr.add(31);
+
+            int max = arr.get(0);
+            int n = arr.size(); ;
+            for (int i = 1; i < n; i++) {
+                if (arr.get(i) > max) {
+                    max = arr.get(i);
+                }
+            }
+            System.out.println("Maximum is : " + max);
+        }
+    }
+}
+
     // TODO: Удалить все дубликаты из списка.
+        class RemovingDuplicates   {
+
+        public static <T> ArrayList<T> removeDuplicates(ArrayList<T> list)
+        {
+            ArrayList<T> newList = new ArrayList<T>();
+            for (T element : list) {
+                if (!newList.contains(element)) {
+                    newList.add(element);
+                }
+            }
+            return newList;
+        }
+        public static void main(String args[]) {
+            ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,1 ,2 ,2 ,3 ,3 ,4 ,4 ,6 ,6 ,123 ,123 ));
+            System.out.println("ArrayList with duplicates: " + list);
+
+            ArrayList<Integer> newList = removeDuplicates(list);
+            System.out.println(" ArrayList  with duplicates removed : " + newList);
+        }
+    }
+
 
     // TODO: Отсортировать список в порядке убывания.
 
-    // TODO: Проверить, содержит ли множество определенный элемент.
+             class Spisok {
+            public static void main(String args[]) {
+                ArrayList<String> list = new ArrayList<String>();
+
+                list.add("Ilya");
+                list.add("Misha");
+                list.add("Masha");
+                list.add("Anton");
+                list.add("Mila");
+                list.add("Dmitrei");
+
+                System.out.println("Unsorted ArrayList: " + list);
+                Collections.sort(list, Collections.reverseOrder());
+                System.out.println("Sorted ArrayList " + "in Descending order : " + list);
+            }
+        }
+
+// TODO: Проверить, содержит ли множество определенный элемент.
+
+ class    Element{
+ public static void main(String args[]) {
+
+     HashSet<String> set = new HashSet<String>();
+
+
+     set.add("Welcome");
+     set.add("To");
+     set.add("Ilya");
+     set.add("4");
+     set.add("Masha");
+
+
+     System.out.println("HashSet: " + set);
+     System.out.println("Does the Set contains 'Geeks'? " + set.contains("Geeks"));
+     System.out.println("Does the Set contains '4'? " + set.contains("4"));
+     System.out.println("Does the Set contains 'No'? " + set.contains("No"));
+ }
+ }
+
 
     // TODO: Найти пересечение двух множеств.
 
-    // TODO: Удалить все элементы из множества, которые также содержатся в другом множестве.
+ class IntersectionOfTwoSets {
+ public static void main(String args[]) {
+     ArrayList<String> List1 = new ArrayList<>();
+     List1.add("Ananas");
+     List1.add("Banan");
+     List1.add("Oreng");
+     List1.add("Dog");
+
+
+     ArrayList<String> List2 = new ArrayList<>();
+     List2.add("Ananas");
+     List2.add("Cat");
+     List2.add("Oreng");
+     List2.add("Ilya");
+     List2.add("Dog");
+
+
+     List2.retainAll(List1);
+
+
+     System.out.println("List1 Contains :" + List1);
+     System.out.println("List2 Contains :" + List2);
+ }
+ }
+
+     // TODO: Удалить все элементы из множества, которые также содержатся в другом множестве.
 
     // TODO: Проверить, содержит ли карта определенный ключ.
 
