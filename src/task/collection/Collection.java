@@ -1,9 +1,6 @@
  package task.collection;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
+import java.util.*;
 
  public class Collection {
     public static void main(String[] args) {
@@ -135,7 +132,7 @@ import java.util.HashSet;
  }
 
      // TODO: Удалить все элементы из множества, которые также содержатся в другом множестве.
-      class sss {
+      class deletion {
          public static void main(String args[]) {
              HashSet<Integer> set1 = new HashSet<>();
              set1.add(1);
@@ -155,15 +152,31 @@ import java.util.HashSet;
              set2.add(7);
 
              HashSet<Integer> deletion = new  HashSet(set1);
-             deletion.removeAll(set2);
+             deletion.removeAll(set2) ;
              System.out.println(deletion);
          }
 
      }
 
     // TODO: Проверить, содержит ли карта определенный ключ.
+   class IsTheKey {
+        public static void main(String args[]) {
+            HashMap<Integer,String> r1 = new HashMap<Integer,String>();
+            r1.put(10,"Ilya");
+            r1.put(12,"aa");
+            r1.put(18,"BB");
+            r1.put(4,"Masha");
 
-    // TODO: Получить все значения, связанные с определенным ключом.
+            System.out.println("Is the key '2' present? " + r1.containsKey(20));
+
+
+            System.out.println("Is the key '4' present? " + r1.containsKey(4));
+        }
+    }
+
+
+
+ // TODO: Получить все значения, связанные с определенным ключом.
 
     // TODO: Удалить все записи из карты, у которых значение равно определенному значению.
 
