@@ -167,6 +167,7 @@ import java.util.*;
             r1.put(18,"BB");
             r1.put(4,"Masha");
 
+
             System.out.println("Is the key '2' present? " + r1.containsKey(20));
 
 
