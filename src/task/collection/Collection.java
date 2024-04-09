@@ -100,7 +100,7 @@ import java.util.HashSet;
 
 
      System.out.println("HashSet: " + set);
-     System.out.println("Does the Set contains 'Geeks'? " + set.contains("Geeks"));
+     System.out.println("Does the Set contains 'ILya'? " + set.contains("Ilya"));
      System.out.println("Does the Set contains '4'? " + set.contains("4"));
      System.out.println("Does the Set contains 'No'? " + set.contains("No"));
  }
