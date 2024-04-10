@@ -178,14 +178,76 @@ import java.util.*;
 
 
  // TODO: Получить все значения, связанные с определенным ключом.
+     class element {
+     public static void main(String args[]) {
+         HashMap<Integer, String> r1 = new HashMap<Integer, String>();
+         r1.put(1, "Ilya");
+         r1.put(2, "aa");
+         r1.put(3, "BB");
+         r1.put(4, "Masha");
+
+         String element = r1.get(3);
+
+         System.out.println("The element at index 3 is " + element);
+     }
+
+ }
 
     // TODO: Удалить все записи из карты, у которых значение равно определенному значению.
+ class delet{
+    public static void main(String args[]) {
+        HashMap<String, String> map = new HashMap<>();
+        map.put("1", "One");
+        map.put("3", "Three");
+        map.put("5", "Five");
+        map.put("7", "Seven");
+        map.put("9", "Nine");
+        System.out.println(map);
+
+        map.remove("9");
+
+        System.out.println(map);
+    }}
+
+
 
     // TODO: Добавить элемент в очередь.
+     class  queue {
+    public static void main(String[] args) {
+        Queue<String> r1 = new PriorityQueue<>() ;
+
+
+        r1.add("ILYA");
+        r1.add("AMIR");
+        r1.add("PETR");
+
+        System.out.println(r1);
+
+    }
+    }
+
 
     // TODO: Получить и удалить первый элемент из очереди.
 
-    // TODO: Проверить, пуста ли очередь.
+     class remov {
+    public static void main(String[] args) {
+        Queue<Integer> r1 = new LinkedList<Integer>();
+        r1.add(333);
+        r1.add(444);
+        r1.add(555);
+        r1.add(666);
+
+        System.out.println("Queue : " + r1);
+
+        r1.remove();
+
+        System.out.println("Queue's head: " + r1.remove());
+
+    }
+    }
+
+
+ // TODO: Проверить, пуста ли очередь.
 
     // TODO: Учет заказов:
     //  Создайте класс Order с полями id, customer и totalAmount.
