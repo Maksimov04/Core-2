@@ -231,17 +231,15 @@ import java.util.*;
 
      class remov {
     public static void main(String[] args) {
-        Queue<Integer> r1 = new LinkedList<Integer>();
+        Deque<Integer> r1 = new ArrayDeque<>();
         r1.add(333);
         r1.add(444);
         r1.add(555);
         r1.add(666);
 
-        System.out.println("Queue : " + r1);
+        System.out.println(r1.removeFirst());
+        System.out.println(r1);
 
-        r1.remove();
-
-        System.out.println("Queue's head: " + r1.remove());
 
     }
     }
