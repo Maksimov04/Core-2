@@ -247,6 +247,20 @@ import java.util.*;
 
  // TODO: Проверить, пуста ли очередь.
 
+ class IsEmoty {
+ public static void main(String[] args) {
+
+     ArrayList<Integer> r1 = new ArrayList<>();
+     r1.add(4);
+     r1.add(3);
+     r1.add(2);
+     r1.add(1);
+
+     System.out.println("Is the queue empty? :  " +  r1.isEmpty());
+ }
+}
+
+
     // TODO: Учет заказов:
     //  Создайте класс Order с полями id, customer и totalAmount.
     //  Создайте метод, который будет принимать список заказов и выводить заказы с наибольшей суммой.
