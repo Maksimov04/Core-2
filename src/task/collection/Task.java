@@ -46,11 +46,11 @@ public class Task {
         String searchTitle = "Приготовить ужин";
         List<Task> tasksFound = findTasksByTitle(tasks, searchTitle);
         if (tasksFound.isEmpty()) {
-            System.out.println("Задачей с заголовком '" + searchTitle + "' не найдено.");
+            System.out.println("Task with title '" + searchTitle + "' not found.");
         } else {
-            System.out.println("Задачи с заголовком '" + searchTitle + ":");
+            System.out.println("Task with title :" + searchTitle );
             for (Task task : tasksFound) {
-                System.out.println("ID: " + task.id + ", Заголовок: " + task.title + ", Завершена: " + task.completed);
+                System.out.println("ID: " + task.id + ", Title: " + task.title + ", Completed: " + task.completed);
             }
         }
     }
