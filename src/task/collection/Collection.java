@@ -16,25 +16,16 @@ public class Collection {
 
     // TODO: Найти наибольший элемент в списке.
 
-
-    class maxElement {
+    static class MaxElement {
         public static void main(String[] args) {
             ArrayList<Integer> arr = new ArrayList<>();
-            arr.add(10);
             arr.add(20);
             arr.add(8);
             arr.add(32);
-            arr.add(21);
-            arr.add(31);
 
-            int max = arr.get(0);
-            int n = arr.size();
-            for (int i = 1; i < n; i++) {
-                if (arr.get(i) > max) {
-                    max = arr.get(i);
-                }
-            }
-            System.out.println("Maximum is : " + max);
+
+            Integer maxElement = Collections.max(arr);
+            System.out.println("Maximum is : " + maxElement);
         }
     }
 }
@@ -61,7 +52,6 @@ class RemovingDuplicates {
 
 
 // TODO: Отсортировать список в порядке убывания.
-
 class Spisok {
     public static void main(String args[]) {
         ArrayList<String> list = new ArrayList<>();
@@ -81,7 +71,7 @@ class Spisok {
 
 // TODO: Проверить, содержит ли множество определенный элемент.
 
-class bunchOfElement {
+class BunchOfElement {
     public static void main(String args[]) {
 
         Set<String> mySet = new HashSet<>();
@@ -128,7 +118,7 @@ class IntersectionOfTwoSets {
 }
 
 // TODO: Удалить все элементы из множества, которые также содержатся в другом множестве.
-class deletion {
+class Deletion {
     public static void main(String args[]) {
         HashSet<Integer> set1 = new HashSet<>();
         set1.add(1);
@@ -173,7 +163,7 @@ class IsTheKey {
 
 
 // TODO: Получить все значения, связанные с определенным ключом.
-class element {
+class Element {
     public static void main(String args[]) {
         HashMap<Integer, String> r1 = new HashMap<Integer, String>();
         r1.put(1, "Ilya");
@@ -224,7 +214,7 @@ class ItemInQueue {
 
 // TODO: Получить и удалить первый элемент из очереди.
 
-class elementFromTheQueue {
+ class ElementFromTheQueue {
     public static void main(String[] args) {
         Deque<Integer> r1 = new ArrayDeque<>();
         r1.add(333);
@@ -242,7 +232,7 @@ class elementFromTheQueue {
 
 // TODO: Проверить, пуста ли очередь.
 
-class emptyQueue {
+ class EmptyQueue {
     public static void main(String[] args) {
 
         ArrayList<Integer> r1 = new ArrayList<>();
