@@ -16,12 +16,12 @@ public class Producer2 {
         printBoxList(boxesList);
     }
 
-        public static <T> void printBoxList(List<Boxes<String>> boxes) {
-            for (Boxes<String> box : boxes) {
-                System.out.println("Печать коробок  : " + box.getCapacity());
-            }
+    public static <T> void printBoxList(List<Boxes<String>> boxes) {
+        for (Boxes<String> box : boxes) {
+            System.out.println("Печать коробок  : " + box.getCapacity());
         }
     }
+}
 
 
 class Boxes<S> {
