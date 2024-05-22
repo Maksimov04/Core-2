@@ -5,16 +5,19 @@ import task.models.MediumBox;
 import task.models.MicroBox;
 import task.models.SmallBox;
 
+
 public class Generics {
 
-
   public static void main(String[] args) {
-
   }
 
   //TODO: реализуйте Метод для проверки наличия коробки в списке (Producer)
 
+
+
   //TODO: реализуйте Метод для добавления коробок в список (Consumer)
+
+
 
   //TODO: реализуйте Метод для печати списка коробок (Producer)
 
